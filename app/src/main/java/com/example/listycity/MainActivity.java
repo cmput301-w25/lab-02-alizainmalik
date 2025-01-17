@@ -49,17 +49,23 @@ public class MainActivity extends AppCompatActivity {
                 cityList.setItemChecked(position, true);
             }
         });
-
         addButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 nameCity.setVisibility(View.VISIBLE);
                 confirmButton.setVisibility(View.VISIBLE);
                 nameCity.setText("");
-
-            }
-        });
-
+            }});
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (citypos >= 0 && citypos < dataList.size()) {
+                    String removedCity = dataList.remove(citypos);
+                    cityAdapter.notifyDataSetChanged();
+                    cityList.clearChoices();
+                    citypos = -1;
+                } else {
+                }}});
         confirmButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -69,23 +75,4 @@ public class MainActivity extends AppCompatActivity {
                     cityAdapter.notifyDataSetChanged();
                     nameCity.setVisibility(View.INVISIBLE);
                     confirmButton.setVisibility(View.INVISIBLE);
-                }
-            }
-        });
-        deleteButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (citypos >= 0 && citypos < dataList.size()) {
-                    String removedCity = dataList.remove(citypos);
-                    cityAdapter.notifyDataSetChanged();
-                    cityList.clearChoices();
-                    citypos = -1;
-
-
-                } else {
-
-                }
-            }
-        });
-        }
-    }
+                }}});}}
