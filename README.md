@@ -3,12 +3,21 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `Ali Zain Malik`
+- **CCID:** `alizain`
 
 ## References and Resources
 
 List any resources used here, or simply put `N/A` if not applicable.
+
+Following video was used as a general introduction and was used as a resource to understand.
+
+https://www.youtube.com/watch?v=tZvjSl9dswg&t=1321s
+Author: Caleb Curry
+Watched By: Ali Zain Malik
+Date: 17/1/2025
+
+
 
 ## Verbal Collaboration
 
